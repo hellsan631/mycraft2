@@ -1,9 +1,16 @@
 {
   "name": "mycraft",
   "version": "0.1.2",
+  "scripts": {
+    "start": "bun dev",
+    "build": "react-scripts build"
+  },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-game-engine": "^1.1.0",
+    "recoil": "^0.7.4",
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {
@@ -12,7 +19,12 @@
     ]
   },
   "devDependencies": {
-    "typescript": "latest",
-    "react-refresh": "0.10.0"
+    "@types/react": "^18.0.16",
+    "@types/react-dom": "^18.0.6",
+    "@types/node": "^18.6.4",
+    "@types/recoil": "^0.0.9",
+    "react-refresh": "0.10.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "latest"
   }
 }
