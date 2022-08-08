@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { useRecoilState } from 'recoil'
 import { playerState } from '../../stores/Player'
 import { Error404 } from './Error404'
 
-import UIProvider from '../misc/UIProvider';
-import Onboard from './Onboard'
+import { UIProvider } from '../misc/UIProvider';
+import { Onboard } from './Onboard'
 
 enum Routes {
   ONBOARDING = 'onboarding',
@@ -21,7 +21,7 @@ function useInitialRoute(): Routes {
 
 export function useRoute() {
   const intialRoute = useInitialRoute()
-  const [route, setRoute] = useState<Routes>(intialRoute)
+  const [route, setRoute] =React.useState<Routes>(intialRoute)
   return [route, setRoute]
 }
 
@@ -37,9 +37,9 @@ function MainRouter() {
   }
 }
 
-export default function Router() {
+export function Router() {
   return (
-    <UIProvider disableBaseline={false}>
+    <UIProvider>
       <MainRouter />
     </UIProvider>
   )

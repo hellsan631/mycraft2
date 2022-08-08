@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react'
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
+import { reportWebVitals } from './reportWebVitals';
 import {
   RecoilRoot,
 } from 'recoil';
-import Router from './modules/main/Router';
+import { Router } from './modules/main/Router';
 
 const rootNode = document.getElementById('root')
 

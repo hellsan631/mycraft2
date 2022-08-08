@@ -1,6 +1,6 @@
-import PlayerSetup from '../player/PlayerSetup';
+import { PlayerSetup }  from '../player/PlayerSetup';
 
-export default function Onboard({}) {
+export function Onboard() {
   return (
     <div>
       <PlayerSetup />
